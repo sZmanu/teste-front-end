@@ -1,0 +1,44 @@
+@import '../../styles/variaveis';
+
+@mixin flex($space){
+    display: flex;
+    justify-content: $space;
+    align-items: center;
+}
+
+.container-nav {
+   @include flex(space-between);
+    padding-left: 90px;
+    padding-right: 90px;
+    flex-wrap: wrap;
+}
+.logo{
+      width: 139px;
+      height: 41px; 
+}
+.container-input{
+    background-color: $cinzaClaro;
+   @include flex(space-between);
+    border-radius: 10px;
+    padding: 0.8em;
+    width: 55%;
+
+    .busca{
+        border:none;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 500;
+        width: 100%;
+        outline: none;
+    }
+    
+}
+.container-icon{
+    width: 15%;
+    @include flex(flex-end);
+    list-style: none;
+}
+.container-td   {
+    width: 100%;
+    @include flex(space-between);
+}
