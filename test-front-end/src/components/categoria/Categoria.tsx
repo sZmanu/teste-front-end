@@ -1,15 +1,19 @@
+import { useState } from 'react';
 import '../categoria/categoria.scss'
 interface Props {
-    nomeCategoria: any
-
+    nomeCategoria: string;
+    btnSelecionando: boolean;
+    label: string;
+    onClick: () => void;
 }
-function Categoria({nomeCategoria}: Props){
+function Categoria({nomeCategoria, btnSelecionando, label, onClick}: Props){
     return(
         <>
-         <img src={nomeCategoria} alt="" className="img-btn"/>
-        <button className="btn-categoria">
-            <img src={nomeCategoria} alt="" className="img-btn"/></button>
+        <button className={`btn-categoria ${btnSelecionando ? "active" : ""}`}
+      onClick={onClick} >
+            <img src={nomeCategoria} alt={label} className="img-btn"/></button>
             </>
+            
     )
 }
 export default Categoria;

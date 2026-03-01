@@ -1,12 +1,9 @@
-@import '../../styles/variaveis';
+@use'../../styles/variaveis' as *;
+@use '../../styles/mixin' as *;
 
-@mixin flex($space){
-    display: flex;
-    justify-content: $space;
-    align-items: center;
-}
+
 .container-info-site{
-    @include flex(space-between);
+    @include flex(space-between, row);
     width: 59%;
     padding: 10px;
     flex-wrap: wrap;
@@ -15,8 +12,7 @@
   }
 }
 .container-info{
-    @include flex(space-between);
-    flex-direction: row;
+    @include flex(space-between, row);
     column-gap: 10px;
 }
 h4 {
@@ -34,7 +30,7 @@ span{
     color: #3019B2;
 }
 .container-nav {
-   @include flex(space-between);
+   @include flex(space-between, row);
     width: 90%;
     flex-wrap: wrap;
     border-bottom: solid 2px $cinzaClaro;
@@ -48,8 +44,7 @@ span{
     
 }
 .container-header{
-    @include flex(center);
-    flex-direction: column;
+    @include flex(center, column);
 }
 .logo{
       width: 139px;
@@ -57,7 +52,7 @@ span{
 }
 .container-input{
     background-color: $cinzaClaro;
-   @include flex(space-between);
+   @include flex(space-between, row);
     border-radius: 10px;
     padding: 0.8em;
     width: 55%;
@@ -74,7 +69,7 @@ span{
 }
 .container-icon{
     width: 13%;
-    @include flex(flex-end);
+    @include flex(flex-end, row);
     list-style: none;
 
     @media screen and (max-width: 1250px) {
@@ -83,10 +78,10 @@ span{
 }
 .container-td   {
     width: 100%;
-    @include flex(space-between);
+    @include flex(space-between, row);
 }
 .container-categoria-site {
-  @include flex(space-between);
+  @include flex(space-between, row);
   width: 82%;
   margin: 10px auto;
   padding-bottom: 5px;
@@ -97,9 +92,7 @@ span{
   }
 }
 
-
 .container-assinatura{
-    @include flex(center);
-    flex-direction: row;
+    @include flex(center, row);
     column-gap: 10px;
 }

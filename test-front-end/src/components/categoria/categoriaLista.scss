@@ -1,4 +1,19 @@
-.categorias{
-    width: 100%;
-    display: flex;
+@use '../../styles/mixin' as *;
+
+.categorias-lista{
+    @include flex(center, row);
+    padding: 30px;
+}
+.container-lista-categorias{
+    @include flex(space-between, row);
+    width: 75%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.estilo-itens-categoria{
+    @include flex(center, column);
+    margin-bottom: 10px;
+}
+.estilo-label{
+    margin-top: 20px;
 }
