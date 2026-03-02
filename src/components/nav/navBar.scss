@@ -1,0 +1,99 @@
+@use'../../styles/variaveis' as *;
+@use '../../styles/mixin' as *;
+
+
+.container-info-site{
+    @include flex(space-between, row);
+    width: 59%;
+    padding: 10px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 2000px) {
+    width: 45%;
+  }
+}
+.container-info{
+    @include flex(space-between, row);
+    column-gap: 10px;
+}
+h4 {
+    font-size: 12px;
+    color: $cinzaMedio;
+    font-weight: 600;
+}
+h3 {
+    font-size: 12px;
+    color: $cinzaMedio;
+    font-weight: 600;
+
+}
+span{
+    color: #3019B2;
+}
+.container-nav {
+   @include flex(space-between, row);
+    width: 90%;
+    flex-wrap: wrap;
+    border-bottom: solid 2px $cinzaClaro;
+    border-top: solid 2px $cinzaClaro;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    @media screen and (min-width: 2000px) {
+    width: 78%;
+  }
+    
+}
+.container-header{
+    @include flex(center, column);
+    
+}
+.logo{
+      width: 139px;
+      height: 41px; 
+}
+.container-input{
+    background-color: $cinzaClaro;
+   @include flex(space-between, row);
+    border-radius: 10px;
+    padding: 0.8em;
+    width: 55%;
+
+    .busca{
+        border:none;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 500;
+        width: 100%;
+        outline: none;
+    }
+    
+}
+.container-icon{
+    width: 13%;
+    @include flex(flex-end, row);
+    list-style: none;
+
+    @media screen and (max-width: 1250px) {
+    width: 23%;
+  }
+}
+.container-td   {
+    width: 100%;
+    @include flex(space-between, row);
+}
+.container-categoria-site {
+  @include flex(space-between, row);
+  width: 82%;
+  margin: 10px auto;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 2000px) {
+    width: 70%;
+  }
+}
+
+.container-assinatura{
+    @include flex(center, row);
+    column-gap: 10px;
+}
