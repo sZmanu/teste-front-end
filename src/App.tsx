@@ -8,6 +8,7 @@ import CategoriaProduto from './components/produto/titulo/CategoriaProduto'
 import TituloSelecionado from './components/produto/titulo/Selecionado'
 import ListaParceiros from './components/parceiros/ListaParceiros'
 import ListaProduto from './components/produto/ListaProduto'
+import Newsletter from './components/newsletter/Newsletter'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
     <ListaMarcas/>
     <TituloSelecionado/>
     <ListaProduto/>
+    <Newsletter/>
     <Footer/>
         
     </>

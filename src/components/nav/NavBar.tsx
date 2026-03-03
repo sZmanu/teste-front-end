@@ -1,6 +1,7 @@
 import "./navBar.scss"
 import logo from "../../assets/images/logo.svg"
-import { CreditCardIcon, CrownIcon, CrownSimpleIcon, HeartIcon, MagnifyingGlassIcon, PackageIcon, ShieldCheckIcon, ShoppingCartIcon, TruckIcon, UserCircleIcon } from "@phosphor-icons/react";
+import { CreditCardIcon, CrownSimpleIcon, HeartIcon, MagnifyingGlassIcon, PackageIcon, ShieldCheckIcon, ShoppingCartIcon, TruckIcon, UserCircleIcon } from "@phosphor-icons/react";
+import caixa from '../../assets/images/caixa.svg'
 function NavBar() {
     return(
         <header className="container-header">
@@ -30,7 +31,7 @@ function NavBar() {
 
             <ul className="container-icon">
                 <li className="container-td">
-                <a href=""><PackageIcon size={32} color="#9F9F9F"/>
+                <a href=""><img src={caixa} alt="icone de caixa" />
                    </a>
                 <a href=""><HeartIcon size={32} color="#9F9F9F"/>
                     </a>
